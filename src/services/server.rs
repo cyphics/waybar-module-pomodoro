@@ -11,6 +11,7 @@ use notify_rust::Notification;
 
 use crate::{
     models::{config::Config, message::Message},
+    services::sound::play_notification_sound,
     utils::{
         self,
         consts::{HOUR, MINUTE, SLEEP_DURATION},
@@ -23,6 +24,8 @@ use super::{
 };
 
 pub fn send_notification(cycle_type: CycleType) {
+    println!("NOTIF");
+    play_notification_sound(&cycle_type);
     if let Err(e) = Notification::new()
         .summary("Pomodoro")
         .body(match cycle_type {

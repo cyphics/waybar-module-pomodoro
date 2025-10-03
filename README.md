@@ -1,3 +1,19 @@
+# FORK INFORMATION
+
+This is a fork of Andreskjerf/waybar-module-pomodoro. Its purpose is to add sound when a session finishes.
+
+## Installation
+
+```bash
+git clone https://github.com/cyphics/waybar-module-pomodoro.git
+cd waybar-module-pomodoro
+cargo build --release
+
+
+
+# ORIGINAL README:
+```
+
 # What is this?
 
 A pomodoro timer for your system bar, intended for Waybar!
@@ -83,3 +99,5 @@ Valid classes:
 "work"      -   timer is currently in a work cycle
 "break"     -   timer is currently in a break cycle, either a short or long one
 ```
+
+
